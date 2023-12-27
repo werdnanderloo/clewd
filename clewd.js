@@ -7,11 +7,11 @@
 const {createServer: Server, IncomingMessage, ServerResponse} = require('node:http'), {createHash: Hash, randomUUID, randomInt, randomBytes} = require('node:crypto'), {TransformStream, ReadableStream} = require('node:stream/web'), {Readable, Writable} = require('node:stream'), {Blob} = require('node:buffer'), {existsSync: exists, writeFileSync: write, createWriteStream} = require('node:fs'), {join: joinP} = require('node:path'), {ClewdSuperfetch: Superfetch, SuperfetchAvailable} = require('./lib/clewd-superfetch'), {AI, fileName, genericFixes, bytesToSize, setTitle, checkResErr, Replacements, Main} = require('./lib/clewd-utils'), ClewdStream = require('./lib/clewd-stream');
 
 /******************************************************* */
-<<<<<<< HEAD
+//<<<<<<< HEAD
 let currentIndex, Firstlogin = true, changeflag = 0, changetime = 0, totaltime, invalidtime = 0, uuidOrgArray = [], model, reqModel, tokens, apiKey, timestamp = Date.now();
-=======
+//=======
 let currentIndex, Firstlogin = true, changeflag = 0, changing, changetime = 0, totaltime, invalidtime = 0, uuidOrgArray = [], model, reqModel, cookieModel, tokens, apiKey, timestamp = Date.now();
->>>>>>> 68becb1095ae6b5411ac7c9b71a8f612fd50e0c3
+//>>>>>>> 68becb1095ae6b5411ac7c9b71a8f612fd50e0c3
 
 const events = require('events'), CookieChanger = new events.EventEmitter();
 require('events').EventEmitter.defaultMaxListeners = 0;
